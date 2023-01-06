@@ -1,19 +1,37 @@
+*{
+    color: white;
+}
 @media screen and (min-width: 480px) {
 
     header{
      display: flex;
-
+     align-items: center;
+     justify-content: center;
+    }
+    .header__list{
+        display: inherit;
+        flex-direction: row;
+        list-style: none;
+    }
+    .header__list__item{
+        margin: 2rem;
     }
 
     body {
-        background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+        background-image: url(./images/bg.jpg);
+        background-color: rgba(0, 0, 0, 0.649);
+        background-blend-mode:multiply; 
         background-size: cover;
         background-repeat: no-repeat;
+               
     }
 
     main{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .main__welcome-screen{
+        width: 70%;
     }
   }
