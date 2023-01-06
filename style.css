@@ -1,0 +1,19 @@
+@media screen and (min-width: 480px) {
+
+    header{
+     display: flex;
+
+    }
+
+    body {
+        background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
