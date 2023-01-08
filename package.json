@@ -1,0 +1,23 @@
+{
+  "name": "chompoo-web",
+  "version": "1.0.0",
+  "description": "chompoos webpage for selling art",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianLennstrom/Chompoo_websida.git"
+  },
+  "keywords": [
+    "art"
+  ],
+  "author": "Sebastian Lennstrom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianLennstrom/Chompoo_websida/issues"
+  },
+  "homepage": "https://github.com/SebastianLennstrom/Chompoo_websida#readme"
+}
