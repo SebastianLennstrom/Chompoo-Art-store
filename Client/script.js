@@ -1,6 +1,9 @@
 const listElement = document.getElementById("gallery__list")
 
 
+const galleryApi = new GalleryApi('http://localhost:5000/images');
+
+
 
 
 
@@ -8,12 +11,13 @@ function renderGallery(){
 
         console.log('rendering gallery');
       
-        GalleryApi.getAll().then((gallery) => {
+        galleryApi.getAll().then((gallery) => {
     
             listElement.innerHTML = '';
             
           if (gallery && gallery.length > 0) {
             gallery.forEach((Item) => {
+              console.log(Item)
               listElement.insertAdjacentHTML('beforeend', renderGalleryItem(Item));
     
             });
@@ -47,5 +51,6 @@ function renderGalleryItem(name, description, image, alt){
   }
 
 
+renderGallery();
 
 
