@@ -1,4 +1,7 @@
 [{
-    "name": "Min tavla", "description": "tavla jag har gjort", "image": "", "alt": ""
+    "name": "Min tavla", "description": "tavla jag har gjort", "image": "..", "alt": ""
+
+
+
 }
 ]
