@@ -8,29 +8,43 @@
     <title>Chompoo Art </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <ul class="header__list">
-            <li class="header__list__item">
-                Hem
-            </li>
-            <li class="header__list__item">
-                Tavlor
-            </li>
-            <li class="header__list__item">
-                Om mig
-            </li>
-        </ul>
-    </header>
+<body class="flex justify-center align-center">
+    <div class="body__top">
+        <header class="relative">
+            <img id="icon" class="w-10 h-10 absolute top-3 left-3" src="../Client/images/icon.png" alt="icon">
 
-    <main>
+            <ul class="header__list">
+                <li class="header__list__item">
+                    Hem
+                </li>
+                <li class="header__list__item">
+                    Tavlor
+                </li>
+                <li class="header__list__item">
+                    Om mig
+                </li>
+            </ul>
+        </header>
 
-      <div class="main__welcome-screen">
-        <h1>Välkommen till min hemsida</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur, 
-            adipisicing elit. Mollitia deserunt amet minus culpa.</h2>
+        <main class="flex justify-center align-center flex-col
+        gap-5">
 
-      </div>
+        <div class="main__welcome-screen flex justify-center align-center flex-col
+        gap-5 ">
+            <section class="p-10 self-center flex flex-col">
+                <h1 class="self-center">Välkommen till min hemsida</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Mollitia deserunt amet minus culpa.</h2>
+            </section>
+                <input class="rounded-full p-1 text-black w-2/3 p-2 self-center"
+                id="searchField" 
+                type="text">
+        
+
+        </div>
+
+        
+    </div>
       
       <section id="gallery">
         <ul id="gallery__list">
@@ -41,7 +55,8 @@
     </main>
 
     <footer>
-       
+     
+
 
     </footer>
     

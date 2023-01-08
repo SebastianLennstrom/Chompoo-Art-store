@@ -18,12 +18,16 @@
         margin: 2rem;
     }
 
-    body {
+   
+    .body__top {
         background-image: url(./images/bg.jpg);
         background-color: rgba(0, 0, 0, 0.649);
         background-blend-mode:multiply; 
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
+        width: 98%;
+        height: 30rem;
                
     }
 
@@ -36,3 +40,9 @@
         width: 70%;
     }
   }
+
+
+
+
+/* ska läggas in som källa i html
+  <a href="https://www.flaticon.com/free-icons/art" title="art icons">Art icons created by Freepik - Flaticon</a>*/
