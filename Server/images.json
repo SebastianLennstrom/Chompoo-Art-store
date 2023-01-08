@@ -1,7 +1,8 @@
 [{
     "name": "Min tavla", "description": "tavla jag har gjort", "image": "Gallery_folder/1.jpg", "alt": ""
-
-
+},
+{
+    "name": "Annan tavla", "description": "2", "image": "Gallery_folder/2.jpg", "alt": ""
 
 }
 ]

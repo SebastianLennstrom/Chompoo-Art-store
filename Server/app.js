@@ -20,7 +20,6 @@ app.get(['/images'], async (req, res) => {
 
     if (req.url === "/images") {
         const gallery = await fs.readFile('./images.json');
-        
         res.send(JSON.parse(gallery));
     } 
 

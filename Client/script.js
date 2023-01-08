@@ -17,9 +17,8 @@ function renderGallery(){
             
           if (gallery && gallery.length > 0) {
             gallery.forEach((Item) => {
-              console.log(Item)
               listElement.insertAdjacentHTML('beforeend', renderGalleryItem(Item));
-    
+              console.log(renderGalleryItem(Item))
             });
           }
         });
@@ -40,7 +39,6 @@ function renderGalleryItem(name, description, image, alt){
             <div class="flex-1">
                 <div class="flex items-center justify-start">
                     <h3 class="mb-1 text-xl font-bold text-pink-800 uppercase">${name}</h3>
-
                     <img src="${image}" alt="${alt}">
                 </div>
                 <p class="mt-2 text-xs">${description}</p>
