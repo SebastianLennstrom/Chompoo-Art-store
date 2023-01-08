@@ -15,26 +15,20 @@ app
     next();
   });
 
-app.get(['/menu', '/orders', '/sentOrders'], async (req, res) => {
+app.get(['/images'], async (req, res) => {
   try {
 
-    if (req.url === "/menu") {
-        const menu = await fs.readFile('./menu.json');
-        res.send(JSON.parse(menu));
-    } else if (req.url === "/orders") {
-        const orders = await fs.readFile('./orders.json');
-        res.send(JSON.parse(orders));
-    } else if (req.url === '/sentOrders'){
-      const sentOrders = await fs.readFile('./sentOrders.json');
-      res.send(JSON.parse(sentOrders));
-    }
+    if (req.url === "/images") {
+        const gallery = await fs.readFile('./images.json');
+        res.send(JSON.parse(gallery));
+    } 
 
   } catch (error) {
     res.status(500).send({ error });
   }
 });
 
-
+/*
 app.post(['/orders', '/sentOrders'], async (req, res) => {
   if (req.url === "/orders") {
     try {
@@ -147,8 +141,8 @@ app.patch('/orders/:id', async (req, res) => {
     
   } catch (error) {
     /* Om något annat fel uppstår, skickas statuskod 500, dvs. ett generellt serverfel, tillsammans med information om felet.  */
-    res.status(500).send({ error: error.stack });
+   /* res.status(500).send({ error: error.stack });
   }
-});
+});*/
 
 app.listen(PORT, () => console.log('Server running on http://localhost:5000'));
